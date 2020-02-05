@@ -1,0 +1,35 @@
+.headerwrapper {
+    background-color: #000207;
+    border-bottom: 1px solid #757575;
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+     margin: 0 auto;
+     max-width: 800px;
+     padding: 1.5rem 1.1rem
+     }
+
+.head h1 {
+    margin: 0;
+}
+
+.headimage {
+    width: 100px;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px)  {.headerwrapper {
+    background-color: #000207;
+    border-bottom: 1px solid #757575;
+    
+}
+ .head {
+     margin: 0 auto;
+     max-width: 600px;
+     
+     }
+
+}

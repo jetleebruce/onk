@@ -1,0 +1,56 @@
+.titlewrapper {
+  width: 100%;
+}
+
+.titlewrapper p {
+  width: 288px;
+  height: 40px;
+  font-family: HelveticaNeueCyr;
+  font-size: 20px;
+  margin: 16px 16px 16px;
+  color: #757575;
+}
+
+.persondata {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 16px 16px 16px;
+  color: #faf7f4;
+}
+
+.formwrapper {
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+}
+
+.formwrapper span {
+  padding-left: 30px;
+}
+
+.formwrapper label {
+  color: white;
+  margin: 16px 16px;
+}
+
+.formwrapper label input {
+  width: 256px;
+  height: 40px;
+  
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin: 18px 17px 16px 45px;
+}
+
+.formwrapper button {
+  width: 256px;
+  height: 48px;
+  border: none;
+  background: #297cc9;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 42px;
+  margin-right: 32px;
+}

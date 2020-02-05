@@ -1,0 +1,47 @@
+.postwrapper{
+   margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlewrapp {
+    display: flex;
+    justify-content: center;
+}
+
+.titlewrapp h1 {
+    font-size: 35px;
+    margin: 15px 40px;
+    color: white;
+}
+
+
+.post {
+    width: 300px;
+    height: auto;
+    margin: 0 16px;
+    background: #151515;
+}
+
+.post img {
+    border-radius: 2px 2px 0px 0px;
+}
+.post a {
+     text-decoration: none;
+}
+.post h3 {
+    font-size: 18px;
+
+    padding: 16px 16px 0 16px;
+    color: #FAF7F4;
+
+}
+
+.postcontent {
+padding: 0 16px 16px 16px;
+font-size: 16px;
+line-height: 18px;
+color: #FAF7F4
+
+}
