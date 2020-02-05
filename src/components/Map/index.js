@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from "react"
-import ReactMapGL, { Marker, Popup } from "react-map-gl"
-import * as parkDate from "../../data/parks.json"
-import SkaterImage from "./imageskater"
+import React, { useState, useEffect } from 'react'
+import ReactMapGL, { Marker, Popup } from 'react-map-gl'
+import * as parkDate from '../../data/parks.json'
+import SkaterImage from './imageskater'
 
-import Mapstyles from "./map.module.css"
+import Mapstyles from './map.module.css'
 
 export default function Map() {
   const [viewport, setViewport] = useState({
     latitude: 56.632339,
     longitude: 47.894089,
-    width: "100vw",
-    height: "100vh",
+    width: '100vw',
+    height: '100vh',
     zoom: 10,
   })
   const [selectedPark, setSelectedPark] = useState(null)
   useEffect(() => {
     const listener = e => {
-      if (e.key === "Escape") {
+      if (e.key === 'Escape') {
         setSelectedPark(null)
       }
     }
-    window.addEventListener("keydown", listener)
+    window.addEventListener('keydown', listener)
 
     return () => {
-      window.removeEventListener("keydown", listener)
+      window.removeEventListener('keydown', listener)
     }
   }, [])
   return (
@@ -31,9 +31,9 @@ export default function Map() {
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken={
-          "pk.eyJ1IjoiamV0bGVlYnJ1Y2UiLCJhIjoiY2s1em5qd216MGJmeDNub2IzNHBhaXl0dSJ9.Ew8vM8DqEMqQXlhC5oenwQ"
+          'pk.eyJ1IjoiamV0bGVlYnJ1Y2UiLCJhIjoiY2s1em5qd216MGJmeDNub2IzNHBhaXl0dSJ9.Ew8vM8DqEMqQXlhC5oenwQ'
         }
-        mapStyle="mapbox://styles/jetleebruce/ck5zoi9uq0zaf1is1feln5uqt"
+        mapStyle='mapbox://styles/jetleebruce/ck5zoi9uq0zaf1is1feln5uqt'
         onViewportChange={viewport => {
           setViewport(viewport)
         }}

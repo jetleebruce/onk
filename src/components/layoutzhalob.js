@@ -5,20 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Headerzhalob from "./Headerzhalob/index"
-import "./layout.css"
-import Header from "./Header"
+import './layout.css'
+import HeaderPage from './HeaderPage'
+import { ICONS } from './HeaderPage/icon'
 
 const Layoutzhalob = ({ children }) => {
   return (
     <>
-      <Headerzhalob />
+      <HeaderPage icon={ICONS.COMPLAIN} />
       <main>{children}</main>
-      <footer></footer>
     </>
   )
 }

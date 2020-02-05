@@ -1,12 +1,12 @@
-import React from "react"
+import React from 'react'
 
-import Layoutzhalob from "../components/layoutzhalob"
-import SEO from "../components/seo"
-import ZhalobaStyles from "./zhaloba.module.css"
+import Layoutzhalob from '../components/layoutzhalob'
+import SEO from '../components/seo'
+import ZhalobaStyles from './zhaloba.module.css'
 
 const Zhaloba = () => (
   <Layoutzhalob>
-    <SEO title="Оставить жалобу" />
+    <SEO title='Оставить жалобу' />
     <div className={ZhalobaStyles.titlewrapper}>
       <p>Сообщить о нарушении прав человека</p>
     </div>
@@ -14,27 +14,28 @@ const Zhaloba = () => (
 
     <div className={ZhalobaStyles.formwrapper}>
       <form
-        method="post"
-        action="https://getform.io/f/3ae6937f-e3e5-4bf5-9e2e-c19202e0cba8"
+        method='post'
+        action='https://getform.io/f/3ae6937f-e3e5-4bf5-9e2e-c19202e0cba8'
       >
-        <label>
+        <label className={ZhalobaStyles.formlable}>
           <span> Имя</span>
-          <input type="text" name="name" />
         </label>
-        <label>
-          Email
-          <input type="email" name="email" />
+        <input className={ZhalobaStyles.forminput} type='text' name='name' />
+
+        <label className={ZhalobaStyles.formlable}>
+          <span>Email</span>
         </label>
-        
-        <label>
-          Message
-          <input type="text" name="message" />
+        <input className={ZhalobaStyles.forminput} type='email' name='email' />
+
+        <label className={ZhalobaStyles.formlable}>
+          <span>Message</span>
         </label>
-        <button type="submit">Отправить</button>
-        
+        <input className={ZhalobaStyles.forminput} type='text' name='message' />
+        <button type='submit'>Отправить</button>
+
       </form>
       </div>
-    
+
   </Layoutzhalob>
 )
 

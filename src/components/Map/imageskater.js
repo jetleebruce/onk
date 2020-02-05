@@ -17,9 +17,9 @@ const SkaterImage = () => {
   `)
   return (
     <Img
-     
+
       fluid={data.placeholderImage.childImageSharp.fluid}
-      alt="Skater"
+      alt='Skater'
     />
   )
 }

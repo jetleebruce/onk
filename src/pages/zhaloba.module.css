@@ -21,7 +21,7 @@
 .formwrapper {
   display: flex;
   flex-direction: column;
-  
+
   width: 100%;
 }
 
@@ -29,19 +29,19 @@
   padding-left: 30px;
 }
 
-.formwrapper label {
+.formlable {
   color: white;
-  margin: 16px 16px;
+  margin-left: 16px;
 }
 
-.formwrapper label input {
+.forminput {
   width: 256px;
   height: 40px;
-  
+
   border: none;
   border-bottom: 1px solid white;
   padding-bottom: 5px;
-  margin: 18px 17px 16px 45px;
+  margin: 10px 17px 16px 45px;
 }
 
 .formwrapper button {
@@ -50,7 +50,5 @@
   border: none;
   background: #297cc9;
   border-radius: 6px;
-  margin-top: 20px;
-  margin-left: 42px;
-  margin-right: 32px;
+  margin: 20px 32px 0 42px;
 }

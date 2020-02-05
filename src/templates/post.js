@@ -1,7 +1,5 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-import Img from "gatsby-image"
-import Layout from "../components/layout"
+import React, { Component } from 'react'
+import Layout from '../components/layout'
 
 class PostTemplate extends Component {
   render() {
@@ -27,7 +25,7 @@ class PostTemplate extends Component {
           <img src={post.featured_media.source_url} />
           <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
           <div
-            style={{ color: `white` }}
+            style={{ color: 'white' }}
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
           {
@@ -36,11 +34,11 @@ class PostTemplate extends Component {
           }
 
           <div
-            style={{ color: `white` }}
+            style={{ color: 'white' }}
             dangerouslySetInnerHTML={{ __html: facebook }}
           />
           <div
-            style={{ color: `white` }}
+            style={{ color: 'white' }}
             dangerouslySetInnerHTML={{ __html: twitter }}
           />
           </div>

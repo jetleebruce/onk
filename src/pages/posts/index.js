@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Link from "gatsby-link"
-import PropTypes from "prop-types"
-import Layoutnews from "../../components/layoutnews"
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
+import LayoutNews from '../../components/layoutnews'
 import PostStyles from '../../pages/posts/posts.module.css'
 
 class PostsTemplate extends Component {
@@ -9,7 +9,7 @@ class PostsTemplate extends Component {
     const data = this.props.data
 
     return (
-      <Layoutnews>
+      <LayoutNews>
         <div className={PostStyles.postwrapper}>
           <div className={PostStyles.titlewrapp}>
             <h1>Новости ОНК</h1>
@@ -19,10 +19,10 @@ class PostsTemplate extends Component {
             <div
               key={node.slug}
               className={PostStyles.post}
-              style={{ marginBottom: 50 + "px" }}
+              style={{ marginBottom: '50px' }}
             >
-              <img src={node.featured_media.source_url}/>
-          <p>{node.date}</p>
+              <img src={node.featured_media.source_url} />
+              <p>{node.date}</p>
               <Link to={`post/${node.slug}`}>
                 <h3>{node.title}</h3>
               </Link>
@@ -30,11 +30,11 @@ class PostsTemplate extends Component {
                 style={{ color: 'white' }}
                 className={PostStyles.postcontent}
                 dangerouslySetInnerHTML={{ __html: node.excerpt }}
-              ></div>
+              />
             </div>
           ))}
         </div>
-      </Layoutnews>
+      </LayoutNews>
     )
   }
 }

@@ -5,25 +5,24 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Headernews from "./Headernews/index"
-import "./layout.css"
+import './layout.css'
+import HeaderPage from './HeaderPage'
+import { ICONS } from './HeaderPage/icon'
 
-const Layoutnews = ({ children }) => {
+const LayoutNews = ({ children }) => {
   return (
     <>
-      <Headernews />
+      <HeaderPage icon={ICONS.NEWS} />
       <main>{children}</main>
-      <footer></footer>
     </>
   )
 }
 
-Layoutnews.propTypes = {
+LayoutNews.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layoutnews
+export default LayoutNews
